@@ -8,9 +8,9 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "pod-install":"cd ios && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install",
+    "pod-install": "cd ios && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install",
     "postinstall": "npx patch-package",
-    "generate-apk":"cd android && ./gradlew assembleRelease"
+    "generate-apk": "cd android && ./gradlew assembleRelease"
   },
   "dependencies": {
     "@react-native-community/datetimepicker": "^8.3.0",
@@ -26,6 +26,7 @@
     "react-native-heroicons": "^4.0.0",
     "react-native-linear-gradient": "^2.8.3",
     "react-native-mmkv": "^3.2.0",
+    "react-native-reanimated": "^3.17.1",
     "react-native-safe-area-context": "^5.3.0",
     "react-native-screens": "^4.10.0",
     "react-native-svg": "^15.11.2",
