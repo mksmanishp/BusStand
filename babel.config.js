@@ -1,6 +1,3 @@
-const plugin = require('tailwindcss');
-const {preset} = require('./jest.config');
-
 module.exports = function (app) {
   app.cache(true);
   return {
