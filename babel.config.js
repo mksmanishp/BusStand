@@ -1,7 +1,11 @@
-module.exports = function (app) {
-  app.cache(true);
+module.exports = function (api) {
+  api.cache(true);
   return {
-    presets: ['module:@react-native/babel-preset', 'nativewind/babel'],
-    plugin: ['react-native-reanimated/plugin'],
+    presets: ['module:metro-react-native-babel-preset'],
+    plugins: [
+      //   'nativewind/babel',
+      'react-native-reanimated/plugin',
+      //   '@babel/plugin-transform-class-static-block',
+    ],
   };
 };
